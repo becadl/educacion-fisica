@@ -7,8 +7,7 @@ body {
 }
 
 header {
-  background: url("img/fondo-header.jpg") no-repeat center center;
-  background-size: cover;
+  background-color: #4db6ac;
   color: #fff;
   padding: 2em;
   text-align: center;
@@ -25,32 +24,45 @@ header h1 {
 header p {
   font-size: 1.5em;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
 }
 
-.videos {
+.rutinas {
   padding: 2em;
-  background-color: #fff3e0;
   text-align: center;
 }
 
-.videos h2 {
-  font-size: 2em;
-  color: #e65100;
+.rutina h3 {
+  background-color: #ffcc80;
+  padding: 1em;
+  cursor: pointer;
+  margin: 1em auto;
+  width: 60%;
+  border-radius: 15px;
+  transition: background 0.3s;
 }
 
-.video-grid {
+.rutina h3:hover {
+  background-color: #ffa726;
+}
+
+.videos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  margin-top: 1em;
 }
 
 video {
-  width: 280px;
-  border: 6px solid #ff9800;
-  border-radius: 15px;
-  background: #fffde7;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 300px;
+  border: 4px solid #ff9800;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.oculto {
+  display: none;
 }
 
 .qr {
@@ -70,10 +82,5 @@ footer {
   background-color: #ff7043;
   color: white;
   font-weight: bold;
-}
-
-img.decoracion {
-  width: 80px;
-  margin: 0.5em;
 }
 
