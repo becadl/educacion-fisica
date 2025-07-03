@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ejercicios con la Maestra</title>
+  <title>Ejercítate con la Maestra</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
   <header>
     <h1>Ejercítate con la Maestra</h1>
-    <p>Aprende ejercicios divertidos y saludables</p>
+    <p>¡Vamos a movernos y divertirnos!</p>
   </header>
 
-  <section class="videos">
-    <h2>Videos de Ejercicios</h2>
-    <div class="video-grid">
-      <video controls src="videos/ejercicio1.mp4"></video>
-      <video controls src="videos/ejercicio2.mp4"></video>
-      <video controls src="videos/ejercicio3.mp4"></video>
+  <section class="rutinas">
+    <h2>Selecciona una rutina</h2>
+
+    <div class="rutina" onclick="mostrarVideos('rutina1')">
+      <h3>Rutina 1</h3>
+      <div id="rutina1" class="videos oculto">
+        <video controls src="videos/rutina1.mp4"></video>
+      </div>
+    </div>
+
+    <div class="rutina" onclick="mostrarVideos('rutina2')">
+      <h3>Rutina 2</h3>
+      <div id="rutina2" class="videos oculto">
+        <video controls src="videos/rutina2.mp4"></video>
+      </div>
+    </div>
+
+    <div class="rutina" onclick="mostrarVideos('rutina3')">
+      <h3>Rutina 3</h3>
+      <div id="rutina3" class="videos oculto">
+        <video controls src="videos/rutina3.mp4"></video>
+      </div>
     </div>
   </section>
 
@@ -30,7 +46,7 @@
     <p>&copy; 2025 Maestra de Educación Física</p>
   </footer>
 
-  <script src="script.js"></script>
   <script src="qrcode.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
